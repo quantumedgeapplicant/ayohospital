@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>  Contact Us </title>
+      <!-- Fontawesome CDN Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+</head>
+<body>
+    <div id="loader" class="loader">Loading...</div>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="nav-hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <br><br><br><br><br>
+    <div class="contact">
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Ayegun-Oleyo Rd,</div>  
+            <div class="text-two">Ibadan 110115, Oyo State</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+2347048611224</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">ayospecialisthospital@ayohospital.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any message for us, kindly use the contact box or call the number on our page. Thanks</p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text"  placeholder="Enter your email">
+          </div>
+          <div class="input-box message-box">
+            <input type="text" placeholder="Write your message">
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now" >
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+    </main>
+  </contact>
+  </body>
+      <footer>
+        <!-- Font Awesome CDN -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        />
+        <!-- Google Fonts -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <div class="row primary">
+          <div class="column about">
+            <h3>Ayo Specialist Hospital</h3>
+            <p>
+              Ayo Specialist Hospital is a one-stop healthcare provider adhering 
+                strictly to industry best practices. It is located in Ibadan the capital 
+                of Oyo State and accessible from many strategic locations.
+                Our team of professionals in different speciality of medicine work to provide patient-centred
+                care to all. Self-motivated personnel care for patients with empathy, dignity, compassion and respect and
+                so make it possible for our patients to choose to stay with us even at first visit.
+                Historically, Ayo Specialist Hospital was established in 1985 as
+                 a small ambulatory clinic. Later, admission facilities/in-patient care were added. 
+            </p>
+          </div>
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#faq">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#cookies-policy">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#terms-of-services">Terms Of Service</a>
+              </li>
+              <li>
+                <a href="#support">Support</a>
+              </li>
+              <li>
+                <a href="#careers">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column subscribe">
+            <h3>Subscribe</h3>
+            <div>
+              <input type="email" placeholder="Your email id here" />
+              <button>Subscribe</button>
+            </div>
+            <div class="social">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row secondary">
+          <div>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+            </p>
+            <p>+2347048611224</p>
+          </div>
+          <div>
+            <p><i class="fas fa-envelope"></i></p>
+            <p>ayospecialisthospital@ayohospital.com</p>
+          </div>
+          <div>
+            <p><i class="fas fa-map-marker-alt"></i></p>
+            <p>Ayegun-Oleyo Rd, Ibadan 110115, Oyo State</p>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>Copyright &copy; 2021 @Sgldesign | All Rights Reserved</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav-hidden');
+        const loader = document.getElementById('loader');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('nav-visible');
+        });
+
+        // Show loader on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                loader.style.display = 'block'; // Show loader
+            });
+        });
+    </script>
+
+    <!-- Include EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your User ID
+    (function() {
+      emailjs.init('NSTYQ1kgB5LvN1Vbl'); // Replace with your EmailJS User ID
+    })();
+
+    // Handle form submission
+    document.getElementById('job-application-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Send form data using EmailJS
+      emailjs.sendForm('service_orusq3p', 'template_533pr9g', this)
+        .then(function(response) {
+          alert('Application submitted successfully!');
+          document.getElementById('job-application-form').reset(); // Reset form
+          window.location.href = 'success.html'; // Redirect to success page
+        }, function(error) {
+          alert('Failed to submit application. Please try again.');
+        });
+    });
+  </script>
+</body>
+</html>

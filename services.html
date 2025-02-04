@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Our Services</title>
+</head>
+<body>
+    <div id="loader" class="loader">Loading...</div>
+    <header>
+        <img src="images/logo.png" alt="Clinic Logo" class="logo">
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="nav-hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <br><br><br><br><br><br>
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="/images/consultation.jpg" alt="General Check-ups">
+                <h3>General Check-ups</h3>
+                <p>Comprehensive health assessments to ensure your well-being.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/ayospecialistpediatriciannursebaby.jpg" alt="Pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Specialized care for infants, children, and adolescents.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/ambulance.jpg" alt="Emergency Care">
+                <h3>Emergency Care</h3>
+                <p>Immediate medical attention for urgent health issues.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/blogpic2.jpg" alt="Specialist Consultations">
+                <h3>Specialist Consultations</h3>
+                <p>Access to a range of specialists for advanced care.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/outpatient.jpg" alt="Pediatrics">
+                <h3>Out Patients</h3>
+                <p>Quick Care for infants, children, and adults.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/pharm.jpg" alt="Pediatrics">
+                <h3>Pharmacy</h3>
+                <p> 24-hour comprehensive pharmaceutical service maintaining a steady supply of medications for our patients.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <!-- Font Awesome CDN -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      />
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="style.css" />
+      <div class="row primary">
+        <div class="column about">
+          <h3>Ayo Specialist Hospital</h3>
+          <p>
+            Ayo Specialist Hospital is a one-stop healthcare provider adhering 
+              strictly to industry best practices. It is located in Ibadan the capital 
+              of Oyo State and accessible from many strategic locations.
+              Our team of professionals in different speciality of medicine work to provide patient-centred
+              care to all. Self-motivated personnel care for patients with empathy, dignity, compassion and respect and
+              so make it possible for our patients to choose to stay with us even at first visit.
+              Historically, Ayo Specialist Hospital was established in 1985 as
+               a small ambulatory clinic. Later, admission facilities/in-patient care were added. 
+          </p>
+        </div>
+        <div class="column links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+            <li>
+              <a href="#careers">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Subscribe</h3>
+          <div>
+            <input type="email" placeholder="Your email id here" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row secondary">
+        <div>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+          </p>
+          <p>+2347048611224</p>
+        </div>
+        <div>
+          <p><i class="fas fa-envelope"></i></p>
+          <p>ayospecialisthospital@ayohospital.com</p>
+        </div>
+        <div>
+          <p><i class="fas fa-map-marker-alt"></i></p>
+          <p>Ayegun-Oleyo Rd, Ibadan 110115, Oyo State</p>
+        </div>
+      </div>
+      <div class="row copyright">
+        <p>Copyright &copy; 2021 @Sgldesign | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav-hidden');
+        const loader = document.getElementById('loader');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('nav-visible');
+        });
+
+        // Show loader on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                loader.style.display = 'block'; // Show loader
+            });
+        });
+    </script>
+</body>
+</html>
