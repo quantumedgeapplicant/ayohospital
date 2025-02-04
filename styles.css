@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #222327; /* Deep harsh background color */
+  overflow-x: hidden;
 }
 
 .loader {
@@ -79,6 +80,12 @@ header::before {
   width: auto; /* Maintain aspect ratio */
   margin-left: 3%;
 }
+@media (max-width: 600px) {
+  .logo {
+      width: 100px;
+  }
+  header{}
+}
 
 nav {
   position: relative; /* Ensure positioning context */
@@ -124,12 +131,13 @@ nav ul li a:hover {
 
 nav.nav-visible {
   position: absolute; /* Position it absolutely */
-  top: 60px; /* Adjust this value based on the height of the hamburger */
+  top: 100px; /* Adjust this value based on the height of the hamburger */
   left: 0; /* Align to the left */
   width: 100%; /* Full width for the dropdown */
   background-color: #121315; /* Match the header color */
   z-index: 999; /* Ensure it appears above other content */
 }
+
 
 .hamburger {
   display: none; /* Hidden by default */
@@ -174,7 +182,13 @@ section {
   color: #fff;
   box-shadow: 0 2px 5px #121315;
 }
+@media (max-width:600px){
+  section {
+    backdrop-filter:none; 
 
+  }
+  
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -188,6 +202,7 @@ section {
 .service-grid h3{
   text-align: center;
   font-size: medium;
+  color: #2a8ded;
 }
 .service-item img {
   max-width: 100%;
@@ -198,7 +213,6 @@ section {
 h2 {
   color:#2a8ded; /* Updated heading color */
   font-size: 30px;
- 
 }
 
 img {
@@ -263,6 +277,7 @@ footer ul {
   padding: 0;
   margin: 0;
 }
+
 footer li:not(:first-child) {
   margin-top: 0.8em;
 }
@@ -324,7 +339,7 @@ div.social {
   font-size: 0.9em;
   text-align: center;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
   .row.primary {
     grid-template-columns: 1fr;
   }
@@ -342,6 +357,20 @@ div.social {
   justify-content: center;
   z-index: -1;
 }
+@media (max-width: 600px) {
+  .hero-banner__title {
+    font-size: 10px;
+  }
+  .hero-banner__stroked-title{
+    font-size: 10px;
+  }
+  
+  .hero-banner{
+    height: 40vh;
+    padding: 5px;
+  }
+  }
+
 .hero-banner__title {
   color:  #2a8ded;
   font-size: 120px;
@@ -350,6 +379,11 @@ div.social {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .hero-banner__title {
+    font-size: 50px;
+  }
 }
 .hero-banner__stroked-title {
   color: transparent;
@@ -361,6 +395,12 @@ div.social {
   position: fixed;
   transform: rotate(-15deg);
   width: 400px;
+}
+
+@media (max-width: 600px) {
+  .hero-banner__image{
+    width: 100%;
+  }
 }
 * {
   box-sizing: border-box;
@@ -384,6 +424,17 @@ div.social {
   line-height: 2;
   margin: 0;
 }
+@media (max-width:600px){
+  #about p{
+   padding:10px 10px ; 
+   text-align: left;
+   text-decoration: none;
+   line-height: normal;
+
+
+  }
+  
+}
 #OurVision{
   img {
     float: left;
@@ -400,6 +451,14 @@ text-align: justify;
   line-height: 2;
   margin: 0;
 
+}
+@media (max-width:600px){
+  #OurVision p{
+    padding: 10px;
+    text-align: left;
+    line-height: normal
+  }
+  
 }
 
 /* Google Font CDN Link */
@@ -528,7 +587,7 @@ text-align: justify;
    margin-left: 55px;
 }
 }
-@media (max-width: 820px) {
+@media (max-width: 600px) {
   .container{
     margin: 40px 0;
     height: 100%;
@@ -551,3 +610,13 @@ text-align: justify;
    margin-left: 0;
  }
 }
+@media (max-width: 600px){
+  footer .column.links{
+    display: none;
+
+  }
+  footer .column.subscribe{
+    display: none;
+  }
+}
+  
