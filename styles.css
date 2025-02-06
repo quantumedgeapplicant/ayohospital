@@ -429,8 +429,7 @@ div.social {
    text-align: left;
    text-decoration: none;
    line-height: normal;
-
-
+	  text-align: justify;
   }
   
 }
